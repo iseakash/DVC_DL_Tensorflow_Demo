@@ -1,0 +1,8 @@
+dvc==2.7.3
+tensorflow==2.5.0
+matplotlib
+numpy
+pandas
+tqdm
+PyYAML
+boto3 ## <<< for aws
