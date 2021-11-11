@@ -5,9 +5,9 @@ download data --> [source](https://drive.google.com/drive/u/5/folders/1tz4IOoJKd
 ## Commands - 
 
 ### Create a new env
-'''bash
+"""bash
 conda create --prefix ./env python=3.7 -y
-'''
+"""
 
 ### activate new env
 '''bash
