@@ -5,28 +5,28 @@ download data --> [source](https://drive.google.com/drive/u/5/folders/1tz4IOoJKd
 ## Commands - 
 
 ### Create a new env
-"""bash
+```bash
 conda create --prefix ./env python=3.7 -y
-"""
+```
 
 ### activate new env
-'''bash
+```bash
 source activate ./env
-'''
+```
 
 ### init GIT, DVC
-'''bash
+```bash
 git init
 dvc init
-'''
+```
 
 ### create empty files -
-'''bash
+```bash
 mkdir -p src/utils config
 touch src/__init__.py src/utils/__init__.py param.yaml dvc.yaml config/config.yaml src/stage_01_load_save.py src/utils/all_utils.py setup.py .gitignore
-'''
+```
 
 ### install src
-'''bash
+```bash
 pip install -e .
-'''
+```
