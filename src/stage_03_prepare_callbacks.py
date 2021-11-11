@@ -1,10 +1,8 @@
 from utils.all_utils import read_yaml, create_directory
-from utils.models import get_VGG_16_model, prepare_model
 from utils.callbacks import create_and_save_tensorboard_callback, create_and_save_checkpoint_callback
 import argparse
 import os
 import logging
-import io
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
 log_dir = "logs"
