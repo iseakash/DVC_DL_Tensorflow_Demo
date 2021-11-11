@@ -1,5 +1,4 @@
 from utils.all_utils import read_yaml, create_directory
-from utils.callbacks import create_and_save_tensorboard_callback, create_and_save_checkpoint_callback
 import argparse
 import os
 import logging
@@ -10,7 +9,7 @@ os.makedirs(log_dir, exist_ok=True)
 logging.basicConfig(filename=os.path.join(log_dir, 'running_logs.log'), level=logging.INFO, format=logging_str,
                     filemode="a")
 
-def prepare_callbacks(config_path, params_path):
+def train_model(config_path, params_path):
     config = read_yaml(config_path)
     params = read_yaml(params_path)
 
@@ -42,9 +41,9 @@ if __name__ == '__main__':
     parsed_args = args.parse_args()
 
     try:
-        logging.info(">>>>> stage three started")
-        prepare_callbacks(config_path=parsed_args.config, params_path=parsed_args.params)
-        logging.info("stage three completed! callbacks are prepared and saved as binary >>>>>\n")
+        logging.info(">>>>> stage four started")
+        train_model(config_path=parsed_args.config, params_path=parsed_args.params)
+        logging.info("stage four completed! training completed and model is saved >>>>>\n")
     except Exception as e:
         logging.exception(e)
         raise e
