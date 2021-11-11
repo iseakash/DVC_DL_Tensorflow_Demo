@@ -12,6 +12,7 @@ logging.basicConfig(filename=os.path.join(log_dir, 'running_logs.log'), level=lo
                     filemode="a")
 
 def prepare_callbacks(config_path, params_path):
+    pass
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
