@@ -24,7 +24,7 @@ def prepare_base_model(config_path, params_path):
     
     create_directory([base_model_dir_path])
     
-    base_model_path = os.path.join(base_model_dir_path, base_model_dir)
+    base_model_path = os.path.join(base_model_dir_path, base_model_name)
 
     model = get_VGG_16_model(input_shape = params["IMAGE_SIZE"], model_path = base_model_path)
 
