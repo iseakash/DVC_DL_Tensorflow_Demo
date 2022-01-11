@@ -49,7 +49,7 @@ def prepare_base_model(config_path, params_path):
 
     logging.info(f"full model summary: \n{_log_model_summary(full_model)}")
 
-    model.save(updated_base_model_path)
+    full_model.save(updated_base_model_path)
 
 
 if __name__ == '__main__':
