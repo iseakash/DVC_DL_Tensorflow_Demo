@@ -1,5 +1,5 @@
 from utils.all_utils import read_yaml, create_directory
-from utils.models import load_full_model
+from utils.models import load_full_model, get_unique_path_to_save_model
 from utils.callbacks import get_callbacks
 from utils.data_management import train_valid_generator
 import argparse
@@ -52,7 +52,13 @@ def train_model(config_path, params_path):
         callbacks = callbacks
     )
 
+    trained_model_dir = os.path.join(artifacts_dir, artifacts["TRAINED_MODEL_DIR"])
+    create_directory([trained_model_dir])
 
+    model_file_path = get_unique_path_to_save_model(trained_model_dir)
+    model.save(model_file_path)
+
+    logging.info(f"trained model is saved at: {model_file_path}")
     
 
 
