@@ -1,6 +1,7 @@
 # DVC - DL - TF - AIOPs
 
 download data --> [source](https://drive.google.com/drive/u/5/folders/1tz4IOoJKdi999IRdqJY04VOifyllRzj1)
+dvc studio --> [My view](https://studio.iterative.ai/user/iseakash/views/DVC_DL_Tensorflow_Demo-z3s9zg6w9m?columns=csglmpcnNJNFCmDGHk8kU)
 
 ## Commands - 
 
